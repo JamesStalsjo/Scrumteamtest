@@ -1,0 +1,74 @@
+﻿@model IEnumerable<JokesWebbApp.Models.Joke>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Rasinformation</h1>
+
+@*<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.JokeQuestion)
+            </th>
+           
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.JokeQuestion)
+            </td>
+            
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+
+        <h1> 123123123123</h1*@
+@*}
+    </tbody>
+</table>
+*@
+<h4>Historik</h4>
+<p>Hemlandet är Tyskland. Förfäderna till dagens eleganta grand danois var stora och 
+    tunga stridshundar som kom till Mellaneuropa från öster under de keltiska folkvandringarna. 
+    Under 1800-talet gick doggstammen kraftigt tillbaka, men genom nationalhjälten Bismarcks stora kärlek för 
+    rasen väcktes åter intresset. Olika namn har provats, men stannade slutligen för deutsche doggen (grand danois) 
+    och år 1880 kom den första rasstandarden. Först 1908 påbörjades en målmedveten avel i Sverige, och de hundar som inte 
+    jagade gick som sällskap för rika damer.</p>
+<h4>Pris</h4>
+<p>En grand danois kostar från 20 000 kr upp till 35 000 kr. Uppfödare och meriter har stor påverkan på priset.</p>
+<h4>Användingsområden</h4>
+<p>Det är en sällskaps-, vakt- och skyddshund.</p>
+<h4>Hälsa</h4>
+<p>Tonsillit (infektion i halshandlarna), disposition för magsäcksomvridning och kardiomyopati 
+    (förstorat hjärta) är något som drabbar rasen. Rasen finns med i de Särskilda Rasspecifika Domaranvisningarna 
+    (SRD) under riskområden som otillräckligt strama ögonkanter, konstruktion av front och bakställ och ängslighet.</p>
+<h4>Egenskaper / Mentalitet</h4>
+<p>Grand danois skall till sin karaktär vara vänlig, kärleksfull och 
+    trogen sin ägare. Mot främlingar kan den vara reserverad, men får inte vara aggressiv.</p>
+<h4>Storlek och utseende</h4>
+<p>Mankhöjd på hanar är lägst 80 cm, 90cm bör inte överskridas. 
+    Mankhöjd på tikar är lägst 72 cm, 84 cm bör inte överskridas. Färgvarianterna grupperas enligt 
+    följande: gul och tigrerad; harlekin och svart; blå. 
+    Rasen ska förena genom sitt ädla helhetsintryck resning, kraft och elegans.</p>
+<h4>Pälsvård</h4>
+<p>Grand danois har en mycket lättsam pälsvård. 
+    Den badas vid behov. Vid fällningsperioderna höst och vår borstas pälsen ur.</p>
+<h4>Övrigt</h4>
+<p>Viktigaste perioden i en grand danois liv är första levnadsåret, 
+    på grund av den snabba tillväxten. Det är viktigt att valpen under 
+    denna period får rätt utfodring och lagom motion. En grundläggande fostran
+    under denna period är också viktigt, då storleken och styrkan utvecklas tidigt. 
+    Informera dig om rasen, besök gärna flera utställningar och uppfödare. 
+    Besök rasklubbens webbplats för mer information.</p>
+
